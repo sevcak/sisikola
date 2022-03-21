@@ -1,0 +1,8 @@
+@import "./defs.scss";
+@import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap');
+
+body{
+    background: $color-dark;
+    color: $color-light;
+    font-family: 'Geo', sans-serif;
+}
