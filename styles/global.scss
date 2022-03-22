@@ -1,6 +1,10 @@
 @import "./defs.scss";
 @import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap');
 
+:root{
+    font-size: 10px; //this means: 1rem = 10px, 2rem = 20px...
+ }
+
 *{
     margin: 0;
 }
