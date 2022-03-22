@@ -1,6 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap");
+* {
+  margin: 0;
+}
+
 body {
   background: #241803;
   color: #F6F2D6;
   font-family: 'Geo', sans-serif;
+}
+
+header {
+  background: #F6F2D6;
+  height: 10vh;
+  width: 100vw;
+}
+
+header #header-img {
+  height: 100%;
+}
+
+header #header-img img {
+  height: 100%;
 }
