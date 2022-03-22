@@ -9,8 +9,9 @@ body {
   font-family: 'Geo', sans-serif;
 }
 
-header {
+header, footer {
   background: #F6F2D6;
+  color: #241803;
   height: 10vh;
   width: 100vw;
 }
@@ -21,4 +22,8 @@ header #header-img {
 
 header #header-img img {
   height: 100%;
+}
+
+footer .copyright {
+  text-align: center;
 }

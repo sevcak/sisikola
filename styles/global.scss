@@ -7,21 +7,29 @@
 
 body{
     background: $color-secondary;
-    color: $color-light;
+    color: $color-main;
     font-family: 'Geo', sans-serif;
 }
 
-header{
+header, footer{
     background: $color-main;
+    color: $color-secondary;
     height: 10vh;
     width: 100vw;
-    
+}
 
+header{
     #header-img{
         height: 100%;
         
         img{
             height: 100%;
         }
+    }
+}
+
+footer{
+    .copyright{
+        text-align: center;
     }
 }
