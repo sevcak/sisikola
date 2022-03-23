@@ -93,6 +93,24 @@ footer .copyright {
   text-align: center;
 }
 
+.button {
+  font-size: 5rem;
+  border: 2px solid #F6F2D6;
+  padding: 1rem 8rem;
+  background: rgba(246, 242, 214, 0.12);
+  text-decoration: none;
+  color: #F6F2D6;
+}
+
+.button:hover {
+  -webkit-filter: brightness(400%);
+          filter: brightness(400%);
+  -webkit-filter: saturate(220%);
+          filter: saturate(220%);
+  -webkit-box-shadow: 0 0 1rem rgba(246, 242, 214, 0.8);
+          box-shadow: 0 0 1rem rgba(246, 242, 214, 0.8);
+}
+
 #main {
   width: 100vw;
 }

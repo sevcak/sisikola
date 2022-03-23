@@ -12,7 +12,7 @@
             }
         }
 
-        .video-overlay{
+        #video-overlay{
             height: 100%;
             width: 100%;
             position: absolute;
@@ -22,9 +22,17 @@
             background: rgba($color: $color-secondary, $alpha: .6);
             backdrop-filter: blur(4px);
             display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 16rem;
+            
+            #overlay-content{
+                display: flex;
             flex-direction: row;
             align-items: center;
-            justify-content: space-around;
+            justify-content: center;
+            gap: 15vw;
 
             .logo-image{
                 width: 22vw;
@@ -45,6 +53,7 @@
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
+                    align-items: flex-start;
                     gap: 20rem;
                     
                     font-size: 4.2rem;
@@ -81,6 +90,7 @@
                     width: 100%;
                     height: auto;
                 }
+            }
             }
         }
 

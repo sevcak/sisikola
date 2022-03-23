@@ -11,7 +11,7 @@
   width: 100%;
 }
 
-#main #splash .video-overlay {
+#main #splash #video-overlay {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -24,6 +24,23 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 16rem;
+}
+
+#main #splash #video-overlay #overlay-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -31,20 +48,22 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15vw;
 }
 
-#main #splash .video-overlay .logo-image {
+#main #splash #video-overlay #overlay-content .logo-image {
   width: 22vw;
 }
 
-#main #splash .video-overlay .logo-image img {
+#main #splash #video-overlay #overlay-content .logo-image img {
   width: 100%;
   height: auto;
 }
 
-#main #splash .video-overlay .splash-text {
+#main #splash #video-overlay #overlay-content .splash-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,7 +74,7 @@
   gap: 4rem;
 }
 
-#main #splash .video-overlay .splash-text .text-container {
+#main #splash #video-overlay #overlay-content .splash-text .text-container {
   position: relative;
   left: 0;
   display: -webkit-box;
@@ -68,11 +87,14 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 20rem;
   font-size: 4.2rem;
 }
 
-#main #splash .video-overlay .splash-text .text-container .text {
+#main #splash #video-overlay #overlay-content .splash-text .text-container .text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,7 +109,7 @@
   line-height: .6em;
 }
 
-#main #splash .video-overlay .splash-text .text-container .text :nth-child(even) {
+#main #splash #video-overlay #overlay-content .splash-text .text-container .text :nth-child(even) {
   line-height: .6em;
   font-size: 16rem;
   position: relative;
@@ -95,7 +117,7 @@
   left: -1rem;
 }
 
-#main #splash .video-overlay .splash-text .text-container .text .first {
+#main #splash #video-overlay #overlay-content .splash-text .text-container .text .first {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,11 +131,11 @@
   margin-bottom: 1.6rem;
 }
 
-#main #splash .video-overlay .splash-text .text-container .text .first :nth-child(2) {
+#main #splash #video-overlay #overlay-content .splash-text .text-container .text .first :nth-child(2) {
   font-size: 8rem;
 }
 
-#main #splash .video-overlay .splash-text .logo-text {
+#main #splash #video-overlay #overlay-content .splash-text .logo-text {
   width: 100%;
   height: auto;
 }

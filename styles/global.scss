@@ -77,6 +77,21 @@ footer{
     }
 }
 
+.button{
+    font-size: 5rem;
+    border: 2px solid $color-main;
+    padding: 1rem 8rem;
+    background: rgba($color: $color-main, $alpha: .12);
+    text-decoration: none;
+    color: $color-main;
+
+    &:hover{
+        filter: brightness(400%);
+        filter: saturate(220%);
+        box-shadow: 0 0 1rem rgba($color: $color-main, $alpha: .8);
+    }
+}
+
 #main{
     width: 100vw;
 }
