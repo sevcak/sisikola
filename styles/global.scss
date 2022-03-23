@@ -11,6 +11,7 @@
 
 body{
     background: $color-secondary;
+    background-image: "media/noise-bg";
     color: $color-main;
     font-family: 'Geo', sans-serif;
     width: 100vw;
@@ -34,7 +35,7 @@ header{
     font-size: 4rem;
     box-shadow: .2rem .2rem 3rem rgba($color: $color-secondary, $alpha: 1);
 
-    a{
+    .nav-link{
         text-decoration: none;
         color: $color-secondary;
     }

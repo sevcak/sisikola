@@ -9,6 +9,7 @@
 
 body {
   background: #241803;
+  background-image: "media/noise-bg";
   color: #F6F2D6;
   font-family: 'Geo', sans-serif;
   width: 100vw;
@@ -40,7 +41,7 @@ header {
           box-shadow: 0.2rem 0.2rem 3rem #241803;
 }
 
-header a {
+header .nav-link {
   text-decoration: none;
   color: #241803;
 }

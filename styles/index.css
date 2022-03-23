@@ -1,7 +1,30 @@
-#main .promo-video {
+#main #splash {
+  position: relative;
+  border-bottom: 1rem solid #F6F2D6;
+}
+
+#main #splash .promo-video {
   width: 100vw;
 }
 
-#main .promo-video video {
+#main #splash .promo-video video {
   width: 100%;
+}
+
+#main #splash .video-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background: rgba(36, 24, 3, 0.5);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+
+#main #splash hr {
+  height: 1rem;
+  color: #F6F2D6;
+  background: #F6F2D6;
 }

@@ -1,8 +1,32 @@
+@import "./defs.scss";
+
 #main{
-    .promo-video{
-        width: 100vw;
-        video{
+    #splash{
+        position: relative;
+        border-bottom: 1rem solid $color-main;
+
+        .promo-video{
+            width: 100vw;
+            video{
+                width: 100%;
+            }
+        }
+
+        .video-overlay{
+            height: 100%;
             width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 9;
+            background: rgba($color: $color-secondary, $alpha: .5);
+            backdrop-filter: blur(2px);
+        }
+
+        hr{
+            height: 1rem;
+            color: $color-main;
+            background: $color-main;
         }
     }
 }
