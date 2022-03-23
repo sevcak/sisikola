@@ -13,34 +13,53 @@ body{
     background: $color-secondary;
     color: $color-main;
     font-family: 'Geo', sans-serif;
+    width: 100vw;
 }
 
 header, footer{
     background: $color-main;
     color: $color-secondary;
-    height: 10vh;
     width: 100vw;
+    padding: 2rem;
 }
 
 header{
+    position: sticky;
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 4rem;
+
+    a{
+        text-decoration: none;
+        color: $color-secondary;
+    }
+
     #header-img{
-        height: 100%;
-        
-        img{
-            height: 100%;
-        }
+        width: 30rem;
+    }
+
+    #nav-bar{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        text-align: center;
     }
 }
 
 footer{
     font-size:2rem;
 
-    display: grid;
-    align-content: center;
+    // display: grid;
+    // align-content: center;
 
     .copyright{
         font-weight: bold;
         font-family: 'Montserrat', sans-serif;
         text-align: center;
     }
+}
+
+#main{
+    width: 100vw;
 }

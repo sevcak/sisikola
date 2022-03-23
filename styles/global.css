@@ -11,33 +11,59 @@ body {
   background: #241803;
   color: #F6F2D6;
   font-family: 'Geo', sans-serif;
+  width: 100vw;
 }
 
 header, footer {
   background: #F6F2D6;
   color: #241803;
-  height: 10vh;
   width: 100vw;
+  padding: 2rem;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.8fr;
+      grid-template-columns: 1fr 1.8fr;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 4rem;
+}
+
+header a {
+  text-decoration: none;
+  color: #241803;
 }
 
 header #header-img {
-  height: 100%;
+  width: 30rem;
 }
 
-header #header-img img {
-  height: 100%;
+header #nav-bar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  text-align: center;
 }
 
 footer {
   font-size: 2rem;
-  display: -ms-grid;
-  display: grid;
-  -ms-flex-line-pack: center;
-      align-content: center;
 }
 
 footer .copyright {
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
+}
+
+#main {
+  width: 100vw;
 }
