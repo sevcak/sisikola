@@ -1,0 +1,7 @@
+#main .promo-video {
+  width: 100vw;
+}
+
+#main .promo-video video {
+  width: 100%;
+}

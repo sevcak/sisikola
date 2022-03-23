@@ -12,18 +12,19 @@ body {
   color: #F6F2D6;
   font-family: 'Geo', sans-serif;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 header, footer {
   background: #F6F2D6;
   color: #241803;
   width: 100vw;
-  padding: 2rem;
+  padding: 2rem 0;
+  z-index: 10;
 }
 
 header {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1.8fr;
@@ -35,6 +36,8 @@ header {
       -ms-flex-align: center;
           align-items: center;
   font-size: 4rem;
+  -webkit-box-shadow: 0.2rem 0.2rem 3rem #241803;
+          box-shadow: 0.2rem 0.2rem 3rem #241803;
 }
 
 header a {
@@ -44,6 +47,7 @@ header a {
 
 header #header-img {
   width: 30rem;
+  margin-left: 2rem;
 }
 
 header #nav-bar {

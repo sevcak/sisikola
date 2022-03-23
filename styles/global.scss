@@ -14,22 +14,25 @@ body{
     color: $color-main;
     font-family: 'Geo', sans-serif;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 header, footer{
     background: $color-main;
     color: $color-secondary;
     width: 100vw;
-    padding: 2rem;
+    padding: 2rem 0;
+    z-index: 10; 
 }
 
 header{
-    position: sticky;
+    position: fixed;
     display: grid;
     grid-template-columns: 1fr 1.8fr;
     justify-content: space-between;
     align-items: center;
     font-size: 4rem;
+    box-shadow: .2rem .2rem 3rem rgba($color: $color-secondary, $alpha: 1);
 
     a{
         text-decoration: none;
@@ -38,6 +41,7 @@ header{
 
     #header-img{
         width: 30rem;
+        margin-left: 2rem;
     }
 
     #nav-bar{
