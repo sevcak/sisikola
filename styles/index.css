@@ -1,6 +1,7 @@
 #main #splash {
   position: relative;
   border-bottom: 1rem solid #F6F2D6;
+  top: 10vh;
 }
 
 #main #splash #video {
@@ -31,10 +32,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 16rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #main #splash #video-overlay #overlay-content {
@@ -48,10 +47,18 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 15vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 8vw;
+  width: 100%;
+  gap: 5vw;
+}
+
+@media (max-width: 1300px) {
+  #main #splash #video-overlay #overlay-content {
+    padding: 0 6vw;
+  }
 }
 
 #main #splash #video-overlay #overlay-content .logo-image {
@@ -90,7 +97,7 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  gap: 20rem;
+  gap: 10vw;
   font-size: 4.2rem;
 }
 
@@ -144,4 +151,39 @@
   height: 1rem;
   color: #F6F2D6;
   background: #F6F2D6;
+}
+
+@media (max-width: 700px) {
+  #main #splash #video {
+    height: 80vh;
+  }
+  #main #splash #video video {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+  }
+  #main #splash .logo-text, #main #splash .text:nth-child(1) * {
+    display: none;
+  }
+  #main #splash #video-overlay {
+    padding: 5vw;
+    height: 80vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 5vh;
+  }
+  #main #splash #video-overlay #overlay-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #main #splash #video-overlay #overlay-content .splash-text .text-container {
+    gap: 0;
+  }
+  #main #splash #video-overlay #overlay-content .logo-image {
+    width: 100%;
+    max-width: 40vh;
+  }
 }

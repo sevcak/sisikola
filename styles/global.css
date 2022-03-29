@@ -27,7 +27,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   :root {
     font-size: 5.5px;
   }
@@ -175,7 +175,6 @@ footer .copyright {
     font-size: 7rem;
     -webkit-backdrop-filter: blur(4px);
             backdrop-filter: blur(4px);
-    border-radius: 0 0 20px 20px;
   }
   #nav-bar.active {
     top: 9vh;

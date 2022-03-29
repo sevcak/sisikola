@@ -15,7 +15,7 @@
     @media (max-width: 1200px){
         font-size: 6px;
     }
-    @media (max-width: 800px){
+    @media (max-width: 900px){
         font-size: 5.5px;
     }
  }
@@ -138,7 +138,6 @@ footer{
         margin: 0 -10rem;
         font-size: 7rem;
         backdrop-filter: blur(4px);
-        border-radius: 0 0 20px 20px;
     }
 
     #nav-bar.active{

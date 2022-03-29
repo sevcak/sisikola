@@ -4,6 +4,7 @@
     #splash{
         position: relative;
         border-bottom: 1rem solid $color-main;
+        top: 10vh;
 
         #video{
             width: 100vw;
@@ -24,73 +25,78 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            gap: 16rem;
+            justify-content: space-around;
+            //gap: 16rem;
             
             #overlay-content{
                 display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            gap: 15vw;
-
-            .logo-image{
-                width: 22vw;
-                img{
-                    width: 100%;
-                    height: auto;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 8vw;
+                width: 100%;
+                gap: 5vw;
+                @media(max-width:1300px){
+                    padding: 0 6vw;
                 }
-            }
 
-            .splash-text{
-                display: flex;
-                flex-direction: column;
-                gap: 4rem;
-
-                .text-container{
-                    position: relative;
-                    left: 0;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items: flex-start;
-                    gap: 20rem;
-                    
-                    font-size: 4.2rem;
-                    
-                    .text{
-                        display: flex;
-                        flex-direction: column;
-                        position: relative;
-                        justify-content: center;
-                        line-height: .6em;
-
-                        :nth-child(even){
-                            line-height: .6em;
-
-                            font-size: 16rem;
-                            position: relative;
-                            top: 0;
-                            left: -1rem;
-                        }
-
-                        .first{
-                            display: flex;
-                            flex-direction: row;
-                            align-items: flex-end;
-                            margin-bottom: 1.6rem;
-                            :nth-child(2){
-                                font-size: 8rem;
-                            }
-                        }
+                .logo-image{
+                    width: 22vw;
+                    img{
+                        width: 100%;
+                        height: auto;
                     }
                 }
 
-                .logo-text{
-                    width: 100%;
-                    height: auto;
+                .splash-text{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4rem;
+
+                    .text-container{
+                        position: relative;
+                        left: 0;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        gap: 10vw;
+                        
+                        font-size: 4.2rem;
+                        
+                        .text{
+                            display: flex;
+                            flex-direction: column;
+                            position: relative;
+                            justify-content: center;
+                            line-height: .6em;
+
+                            :nth-child(even){
+                                line-height: .6em;
+
+                                font-size: 16rem;
+                                position: relative;
+                                top: 0;
+                                left: -1rem;
+                            }
+
+                            .first{
+                                display: flex;
+                                flex-direction: row;
+                                align-items: flex-end;
+                                margin-bottom: 1.6rem;
+                                :nth-child(2){
+                                    font-size: 8rem;
+                                }
+                            }
+                        }
+                    }
+
+                    .logo-text{
+                        width: 100%;
+                        height: auto;
+                    }
                 }
-            }
             }
         }
 
@@ -98,6 +104,42 @@
             height: 1rem;
             color: $color-main;
             background: $color-main;
+        }
+
+        @media(max-width: 700px){   
+            #video{
+                height: 80vh;
+                video{
+                    object-fit: cover;
+                    height: 100%;
+                }
+            }
+            
+            .logo-text, .text:nth-child(1) *{
+                display: none;
+            }
+
+            #video-overlay{
+                padding: 5vw;
+                height: 80vh;
+                justify-content: center;
+                gap: 5vh;
+
+                #overlay-content{
+                    flex-direction: column;
+
+                    .splash-text{
+                        .text-container{
+                            gap: 0;
+                        }
+                    }
+
+                    .logo-image{
+                        width: 100%;
+                        max-width: 40vh;
+                    }
+                }
+            }
         }
     }
 }
