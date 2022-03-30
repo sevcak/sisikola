@@ -29,6 +29,9 @@
 h1{
     font-size: 6rem;
     font-weight: normal;
+    @media(max-width: 620px){
+        font-size: 5rem;
+    }
 }
 
 p{

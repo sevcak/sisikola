@@ -2,6 +2,7 @@
   position: relative;
   border-bottom: 1rem solid #F6F2D6;
   top: 10vh;
+  overflow: hidden;
 }
 
 #main #splash #video {
@@ -198,6 +199,13 @@
       grid-template-columns: 1fr 1fr;
 }
 
+@media (max-width: 600px) {
+  #main #welcome-text {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 #main #welcome-text .text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -211,6 +219,18 @@
 
 #main #welcome-text .image {
   position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  #main #welcome-text .image {
+    position: fixed;
+    z-index: -1;
+    opacity: 30%;
+    top: 20%;
+    left: 20%;
+  }
 }
 
 #main #welcome-text .image video {

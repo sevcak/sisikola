@@ -45,6 +45,12 @@ h1 {
   font-weight: normal;
 }
 
+@media (max-width: 620px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
 p {
   font-size: 3rem;
 }
