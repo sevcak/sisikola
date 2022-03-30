@@ -189,7 +189,41 @@
 }
 
 #main #welcome-text {
-  margin-top: 20vh;
+  margin-top: 10vh;
   padding: 8rem;
-  height: 100vh;
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+#main #welcome-text .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
+
+#main #welcome-text .image {
+  position: relative;
+}
+
+#main #welcome-text .image video {
+  width: 95%;
+  position: relative;
+  top: 5%;
+}
+
+#main #welcome-text .image .diamond {
+  position: absolute;
+  left: 5%;
+  top: 0;
+  z-index: -1;
+  opacity: 50%;
+  width: 150%;
 }

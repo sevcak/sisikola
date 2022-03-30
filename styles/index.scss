@@ -145,8 +145,38 @@
 
     
     #welcome-text{
-        margin-top: 20vh;
+        margin-top: 10vh;
         padding: 8rem;
-        height: 100vh; //temp for test
+        //height: 100vh; //temp for test
+        overflow: hidden;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .text{
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        .image{
+            position: relative;
+
+            video{
+                width: 95%;
+                position: relative;
+                top: 5%;
+            }
+            
+            .diamond{
+                position: absolute;
+                left: 5%;
+                top: 0;
+                z-index: -1;
+                opacity: 50%;
+                width: 150%;
+
+            }
+        }
     }
 }
