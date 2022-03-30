@@ -40,15 +40,22 @@
           box-sizing: border-box;
 }
 
+h1 {
+  font-size: 5rem;
+  font-weight: normal;
+}
+
 body {
   background: #241803;
-  background-image: "media/noise-bg";
-  background-repeat: no-repeat;
+  background-image: url("media/noise-bg");
+  background-position: center;
+  background-repeat: repeat;
   background-size: cover;
   color: #F6F2D6;
   font-family: 'Geo', sans-serif;
   width: 100vw;
   overflow-x: hidden;
+  height: 100%;
 }
 
 header, footer {
@@ -103,6 +110,15 @@ header #nav-bar .nav-link {
 
 footer {
   font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer .copyright {
@@ -159,7 +175,7 @@ footer .copyright {
   }
   #nav-bar {
     position: fixed;
-    top: -100%;
+    top: -100vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -183,4 +199,11 @@ footer .copyright {
 
 #main {
   width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }

@@ -26,15 +26,23 @@
     box-sizing: border-box;
 }
 
+h1{
+    font-size: 5rem;
+    font-weight: normal;
+}
+
 body{
     background: $color-secondary;
-    background-image: "media/noise-bg";
-    background-repeat: no-repeat;
+    background-image: url("media/noise-bg");
+    background-position: center;
+    
+    background-repeat: repeat;
     background-size: cover;
     color: $color-main;
     font-family: 'Geo', sans-serif;
     width: 100vw;
     overflow-x: hidden;
+    height: 100%;
 }
 
 header, footer{
@@ -75,6 +83,9 @@ header{
 
 footer{
     font-size:2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .copyright{
         font-weight: bold;
@@ -127,7 +138,7 @@ footer{
 
     #nav-bar{
         position: fixed;
-        top: -100%;
+        top: -100vh;
         flex-direction: column;
         background-color: rgba($color: $color-main, $alpha: .8);
         width: 100%;
@@ -148,4 +159,6 @@ footer{
 
 #main{
     width: 100vw;
+    display: flex;
+    flex-direction: column;
 }
