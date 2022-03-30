@@ -47,7 +47,7 @@ h1 {
 
 body {
   background: #241803;
-  background-image: url("media/noise-bg");
+  background-image: url(../media/noise-bg.png);
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
