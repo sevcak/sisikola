@@ -144,13 +144,19 @@ footer .copyright {
 }
 
 .button {
-  font-size: 5rem;
+  font-size: 6rem;
   border: 2px solid #F6F2D6;
   padding: 1rem 8rem;
   background: rgba(246, 242, 214, 0.12);
   text-decoration: none;
   color: #F6F2D6;
   text-align: center;
+}
+
+@media (max-width: 600px) {
+  .button {
+    font-size: 5rem;
+  }
 }
 
 .button:hover {

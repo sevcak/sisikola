@@ -108,7 +108,10 @@ footer{
 }
 
 .button{
-    font-size: 5rem;
+    font-size: 6rem;
+    @media(max-width: 600px){
+        font-size: 5rem;
+    }
     border: 2px solid $color-main;
     padding: 1rem 8rem;
     background: rgba($color: $color-main, $alpha: .12);
