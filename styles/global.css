@@ -49,6 +49,12 @@ p {
   font-size: 3rem;
 }
 
+hr {
+  background: #F6F2D6;
+  color: #F6F2D6;
+  height: 3px;
+}
+
 body {
   background: #241803;
   background-image: url(../media/noise-bg.png);
@@ -138,6 +144,7 @@ footer .copyright {
   background: rgba(246, 242, 214, 0.12);
   text-decoration: none;
   color: #F6F2D6;
+  text-align: center;
 }
 
 .button:hover {

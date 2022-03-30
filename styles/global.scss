@@ -35,6 +35,12 @@ p{
     font-size: 3rem;
 }
 
+hr{
+    background: $color-main;
+    color: $color-main;
+    height: 3px;
+}
+
 body{
     background: $color-secondary;
     background-image: url(../media/noise-bg.png);
@@ -105,6 +111,7 @@ footer{
     background: rgba($color: $color-main, $alpha: .12);
     text-decoration: none;
     color: $color-main;
+    text-align: center;
 
     &:hover{
         filter: brightness(400%);
