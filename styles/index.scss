@@ -180,6 +180,9 @@
                 width: 95%;
                 position: relative;
                 top: 5%;
+                @media(max-width: 600px){
+                    left: 10%;
+                }
             }
             
             .diamond{

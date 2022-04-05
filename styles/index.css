@@ -240,6 +240,12 @@
   top: 5%;
 }
 
+@media (max-width: 600px) {
+  #main #welcome-text .image video {
+    left: 10%;
+  }
+}
+
 #main #welcome-text .image .diamond {
   position: absolute;
   left: 5%;
