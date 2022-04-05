@@ -190,6 +190,7 @@
 }
 
 #main #welcome-text {
+  position: relative;
   margin-top: 10vh;
   padding: 8rem;
   overflow: hidden;
@@ -225,11 +226,11 @@
 
 @media (max-width: 600px) {
   #main #welcome-text .image {
-    position: fixed;
+    position: absolute;
     z-index: -1;
     opacity: 30%;
     top: 20%;
-    left: 20%;
+    left: 10%;
   }
 }
 

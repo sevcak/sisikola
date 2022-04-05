@@ -145,6 +145,7 @@
 
     
     #welcome-text{
+        position: relative;
         margin-top: 10vh;
         padding: 8rem;
         //height: 100vh; //temp for test
@@ -168,11 +169,11 @@
             width: 100%;
 
             @media(max-width: 600px){
-                position: fixed;
+                position: absolute;
                 z-index: -1;
                 opacity: 30%;
                 top: 20%;
-                left: 20%;
+                left: 10%;
             }
 
             video{
