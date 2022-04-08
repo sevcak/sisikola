@@ -1,0 +1,27 @@
+@import "./defs.scss";
+
+#main{
+    #banner{
+        position: relative;
+        top: 10vh;
+        height: 500px;
+        background-image: url(../media/sisikola-banner.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-bottom: 6px solid $color-main;
+
+        #banner-content{
+            backdrop-filter: blur(3px);
+            height: 100%;
+            width: 100%;
+            padding: 3vw;
+            background: rgba($color: $color-secondary, $alpha: .3);
+
+            display: flex;
+        align-items: center;
+            .heading{
+                font-size: 7rem;
+            }
+        }
+    }
+}
