@@ -105,6 +105,12 @@ header #header-img {
   width: 30vh;
 }
 
+@media (max-width: 460px) {
+  header #header-img {
+    width: 50vw;
+  }
+}
+
 header #nav-bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -176,13 +182,9 @@ footer .copyright {
 .hamburger .bar {
   display: block;
   width: 25px;
-  height: 5px;
+  height: 4px;
   background-color: #241803;
   border-radius: 1px;
-}
-
-.hamburger .bar:nth-child(3) {
-  width: 70%;
 }
 
 @media (max-width: 1200px) {
@@ -196,7 +198,7 @@ footer .copyright {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 5px;
+    gap: 6px;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;

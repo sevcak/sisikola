@@ -4,13 +4,15 @@
   height: 500px;
   background-image: url(../media/sisikola-banner.png);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   border-bottom: 6px solid #F6F2D6;
 }
 
 @media (max-width: 900px) {
   #main #banner {
-    height: 40vw;
+    height: 35vh;
+    background-position: 0;
   }
 }
 
@@ -37,4 +39,8 @@
   #main #banner #banner-content .heading {
     font-size: 6rem;
   }
+}
+
+#main #contact-info {
+  height: 100vh;
 }

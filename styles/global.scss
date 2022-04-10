@@ -78,6 +78,9 @@ header{
 
     #header-img{
         width: 30vh;
+        @media(max-width: 460px){
+            width: 50vw;
+        }
     }
 
     #nav-bar{
@@ -133,13 +136,9 @@ footer{
     .bar{
         display: block;
         width: 25px;
-        height: 5px;
+        height: 4px;
         background-color: $color-secondary;
         border-radius: 1px;
-
-        &:nth-child(3){
-            width: 70%;
-        }
     }
 }
 
@@ -149,7 +148,7 @@ footer{
         position: relative;
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        gap: 6px;
         align-items: flex-end;
     }
     hamburger.active .bar:nth-child(2){
