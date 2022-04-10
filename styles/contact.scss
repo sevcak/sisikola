@@ -79,12 +79,14 @@
     #board{
         border: none;
         text-align: center;
-
-        
+        padding-top: 5vh;
 
         .title{
             text-transform: uppercase;
-            font-size: .55vw;
+            font-size: .4vw;
+            @media(max-width: 600px){
+                font-size: .55vw;
+            }
 
             .heading{
                 font-size: 16em;
@@ -104,7 +106,7 @@
             display: flex;
             justify-content: space-between;
             font-size: .3vw;
-            padding-top: 10vw;
+            padding-top: 5vw;
             
             @media(max-width: 600px){
                 flex-direction: column;
@@ -112,6 +114,7 @@
             }
             
             .board-member{
+                height: 90em;
                 @media(min-width: 601px){
                     transition: .3s;
 

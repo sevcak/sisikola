@@ -109,11 +109,18 @@
 #main #board {
   border: none;
   text-align: center;
+  padding-top: 5vh;
 }
 
 #main #board .title {
   text-transform: uppercase;
-  font-size: .55vw;
+  font-size: .4vw;
+}
+
+@media (max-width: 600px) {
+  #main #board .title {
+    font-size: .55vw;
+  }
 }
 
 #main #board .title .heading {
@@ -140,7 +147,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: .3vw;
-  padding-top: 10vw;
+  padding-top: 5vw;
 }
 
 @media (max-width: 600px) {
@@ -151,6 +158,10 @@
             flex-direction: column;
     gap: 12vh;
   }
+}
+
+#main #board #board-members .board-member {
+  height: 90em;
 }
 
 @media (min-width: 601px) {
