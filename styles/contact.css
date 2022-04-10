@@ -107,6 +107,11 @@
   width: 1em;
 }
 
+#main #contact-info .contact .info .button {
+  font-size: 4rem;
+  margin-top: .5em;
+}
+
 #main #board {
   border: none;
   text-align: center;
