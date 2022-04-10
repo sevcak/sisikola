@@ -8,12 +8,18 @@
   border-bottom: 6px solid #F6F2D6;
 }
 
+@media (max-width: 900px) {
+  #main #banner {
+    height: 40vw;
+  }
+}
+
 #main #banner #banner-content {
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
   height: 100%;
   width: 100%;
-  padding: 3vw;
+  padding: 5vw;
   background: rgba(36, 24, 3, 0.3);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24,5 +30,11 @@
 }
 
 #main #banner #banner-content .heading {
-  font-size: 7rem;
+  font-size: 8rem;
+}
+
+@media (max-width: 600px) {
+  #main #banner #banner-content .heading {
+    font-size: 6rem;
+  }
 }

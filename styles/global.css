@@ -78,7 +78,7 @@ header, footer {
   background: #F6F2D6;
   color: #241803;
   width: 100vw;
-  height: 10vh;
+  height: 12vh;
   z-index: 10;
 }
 
@@ -93,7 +93,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 4rem;
+  font-size: 5rem;
   -webkit-box-shadow: 0.2rem 0.2rem 3rem #241803;
           box-shadow: 0.2rem 0.2rem 3rem #241803;
   padding: 0 10rem;
@@ -102,7 +102,7 @@ header {
 }
 
 header #header-img {
-  width: 30rem;
+  width: 30vh;
 }
 
 header #nav-bar {
@@ -175,16 +175,31 @@ footer .copyright {
 
 .hamburger .bar {
   display: block;
-  width: 28px;
+  width: 25px;
   height: 5px;
-  margin: 5px auto;
   background-color: #241803;
   border-radius: 1px;
 }
 
-@media (max-width: 700px) {
+.hamburger .bar:nth-child(3) {
+  width: 70%;
+}
+
+@media (max-width: 1200px) {
   .hamburger {
     display: block;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 5px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   hamburger.active .bar:nth-child(2) {
     opacity: 0;

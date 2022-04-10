@@ -62,7 +62,7 @@ header, footer{
     background: $color-main;
     color: $color-secondary;
     width: 100vw;
-    height: 10vh;
+    height: 12vh;
     z-index: 10; 
 }
 
@@ -71,13 +71,13 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 4rem;
+    font-size: 5rem;
     box-shadow: .2rem .2rem 3rem rgba($color: $color-secondary, $alpha: 1);
     padding: 0 10rem;
     box-sizing: border-box;
 
     #header-img{
-        width: 30rem;
+        width: 30vh;
     }
 
     #nav-bar{
@@ -132,17 +132,25 @@ footer{
 
     .bar{
         display: block;
-        width: 28px;
+        width: 25px;
         height: 5px;
-        margin: 5px auto;
         background-color: $color-secondary;
         border-radius: 1px;
+
+        &:nth-child(3){
+            width: 70%;
+        }
     }
 }
 
-@media(max-width: 700px){
+@media(max-width: 1200px){
     .hamburger{
         display: block;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-end;
     }
     hamburger.active .bar:nth-child(2){
         opacity: 0;
