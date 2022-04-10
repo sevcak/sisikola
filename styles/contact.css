@@ -1,29 +1,31 @@
 #main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 10vh;
   padding-bottom: 5vh;
 }
 
+@media (max-width: 900px) {
+  #main {
+    gap: 10vw;
+  }
+}
+
+#main > * {
+  border-bottom: 6px solid #F6F2D6;
+  padding: 8vw;
+}
+
 #main #banner {
+  padding: 0;
   position: relative;
   height: 500px;
   background-image: url(../media/sisikola-banner.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border-bottom: 6px solid #F6F2D6;
 }
 
 @media (max-width: 900px) {
   #main #banner {
-    height: 35vh;
-    background-position: 0;
+    height: 60vw;
   }
 }
 
@@ -58,7 +60,6 @@
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  padding: 0 5vw;
   gap: 10vw;
 }
 
@@ -78,4 +79,47 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: .5em;
+}
+
+#main #contact-info .contact .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .2em;
+}
+
+#main #contact-info .contact .info div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5em;
+}
+
+#main #contact-info .contact .info div img {
+  width: 1em;
+}
+
+#main #board {
+  border: none;
+  text-align: center;
+}
+
+#main #board .title {
+  text-transform: uppercase;
+}
+
+#main #board .title .heading {
+  font-size: 16rem;
+}
+
+#main #board .title .description {
+  font-size: 8rem;
 }

@@ -1,23 +1,28 @@
 @import "./defs.scss";
 
 #main{
-    display: flex;
-    flex-direction: column;
-    gap: 10vh;
     padding-bottom: 5vh;
+    @media(max-width:900px){
+        gap: 10vw;
+    }
+    
+    & > *{
+        border-bottom: 6px solid $color-main;
+        padding: 8vw;
+    }
 
     #banner{
+        padding: 0;
         position: relative;
         height: 500px;
         background-image: url(../media/sisikola-banner.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        border-bottom: 6px solid $color-main;
 
         @media(max-width: 900px){
-            height: 35vh;
-            background-position: 0;
+            height: 60vw;
+            //background-position: 0;
 
         }
 
@@ -40,11 +45,9 @@
     }
 
     #contact-info{
-
         position: relative; 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        padding: 0 5vw;
         gap: 10vw;
         @media(max-width: 600px){
             grid-template-columns: auto;
@@ -54,6 +57,40 @@
         .contact{
             display: flex;
             flex-direction: column;
+            gap: .5em;
+
+            .info{
+                display: flex;
+                flex-direction: column;
+                gap: .2em;
+                div{
+                    display: flex;
+                    align-items: center;
+                    gap: .5em;
+                    img{
+                        width: 1em;
+                    }
+                }
+            }
         }
+    }
+
+    #board{
+        border: none;
+        text-align: center;
+
+        .title{
+            text-transform: uppercase;
+
+            .heading{
+                font-size: 16rem;
+            }
+
+            .description{
+                font-size: 8rem;
+            }
+        }
+
+
     }
 }
