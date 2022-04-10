@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     gap: 10vh;
+    padding-bottom: 5vh;
 
     #banner{
         position: relative;
@@ -39,13 +40,14 @@
     }
 
     #contact-info{
+
         position: relative; 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         padding: 0 5vw;
         gap: 10vw;
         @media(max-width: 600px){
-            grid-template-columns: 1fr;
+            grid-template-columns: auto;
             gap: 10vh;
         }
 

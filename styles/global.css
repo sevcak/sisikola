@@ -41,6 +41,7 @@
 }
 
 #main {
+  font-size: 4rem;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
