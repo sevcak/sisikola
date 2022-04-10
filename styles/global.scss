@@ -26,11 +26,30 @@
     box-sizing: border-box;
 }
 
+#main{
+    font-size: 4rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 90vh;
+    padding-top: 12vh;
+    overflow: hidden;
+}
+
 h1{
     font-size: 6rem;
     font-weight: normal;
     @media(max-width: 620px){
         font-size: 5rem;
+    }
+}
+
+h2{
+    font-size: 5rem;
+    font-weight: normal;
+    @media(max-width: 620px){
+        font-size: 4.5rem;
     }
 }
 
@@ -48,22 +67,20 @@ body{
     background: $color-secondary;
     background-image: url(../media/noise-bg.png);
     background-position: center;
-    
     background-repeat: repeat;
     background-size: cover;
     color: $color-main;
     font-family: 'Geo', sans-serif;
     width: 100vw;
     overflow-x: hidden;
-    height: 100%;
 }
 
 header, footer{
     background: $color-main;
     color: $color-secondary;
     width: 100vw;
-    height: 10vh;
-    z-index: 10; 
+    height: 12vh;
+    z-index: 99; 
 }
 
 header{
@@ -71,13 +88,16 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 4rem;
+    font-size: 5rem;
     box-shadow: .2rem .2rem 3rem rgba($color: $color-secondary, $alpha: 1);
     padding: 0 10rem;
     box-sizing: border-box;
 
     #header-img{
-        width: 30rem;
+        width: 30vh;
+        @media(max-width: 460px){
+            width: 50vw;
+        }
     }
 
     #nav-bar{
@@ -132,17 +152,21 @@ footer{
 
     .bar{
         display: block;
-        width: 28px;
-        height: 5px;
-        margin: 5px auto;
+        width: 25px;
+        height: 4px;
         background-color: $color-secondary;
         border-radius: 1px;
     }
 }
 
-@media(max-width: 700px){
+@media(max-width: 1200px){
     .hamburger{
         display: block;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        align-items: flex-end;
     }
     hamburger.active .bar:nth-child(2){
         opacity: 0;
@@ -173,10 +197,4 @@ footer{
         top: 9vh;
     }
     
-}
-
-#main{
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
 }

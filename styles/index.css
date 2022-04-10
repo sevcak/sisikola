@@ -1,7 +1,6 @@
 #main #splash {
   position: relative;
   border-bottom: 1rem solid #F6F2D6;
-  top: 10vh;
   overflow: hidden;
 }
 
@@ -191,9 +190,7 @@
 
 #main #welcome-text {
   position: relative;
-  margin-top: 10vh;
   padding: 8rem;
-  overflow: hidden;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -236,7 +233,8 @@
 
 #main #welcome-text .image video {
   width: 95%;
-  position: relative;
+  position: absolute;
+  z-index: -1;
   top: 5%;
 }
 
@@ -250,7 +248,7 @@
   position: absolute;
   left: 5%;
   top: 0;
-  z-index: -1;
+  z-index: -2;
   opacity: 50%;
   width: 150%;
 }
