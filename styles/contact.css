@@ -123,3 +123,22 @@
 #main #board .title .description {
   font-size: 8em;
 }
+
+#main #board #board-members {
+  padding-top: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: .3vw;
+}
+
+#main #board #board-members .name {
+  font-size: 16em;
+}
+
+#main #board #board-members .position {
+  font-size: 8em;
+}

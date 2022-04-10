@@ -94,6 +94,18 @@
             }
         }
 
+        #board-members{
+            padding-top: 10vh;
+            display: flex;
+            justify-content: space-between;
+            font-size: .3vw;
 
+            .name{
+                font-size: 16em;
+            }
+            .position{
+                font-size: 8em;
+            }
+        }
     }
 }
