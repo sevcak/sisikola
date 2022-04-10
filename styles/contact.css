@@ -4,7 +4,7 @@
 
 #main > * {
   border-bottom: 6px solid #F6F2D6;
-  padding: 10vh 8vw;
+  padding: 8vh 8vw;
 }
 
 #main #banner {
@@ -118,14 +118,21 @@
 
 #main #board .title .heading {
   font-size: 16em;
+  margin-bottom: .1em;
 }
 
 #main #board .title .description {
   font-size: 8em;
+  margin-top: .3em;
+}
+
+@media (max-width: 600px) {
+  #main #board .title .description {
+    font-size: 10em;
+  }
 }
 
 #main #board #board-members {
-  padding-top: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,12 +140,81 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: .3vw;
+  padding-top: 10vw;
 }
 
-#main #board #board-members .name {
+@media (max-width: 600px) {
+  #main #board #board-members {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 12vh;
+  }
+}
+
+@media (min-width: 601px) {
+  #main #board #board-members .board-member {
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  #main #board #board-members .board-member .portrait .toggled {
+    display: none;
+  }
+  #main #board #board-members .board-member:nth-child(odd) {
+    -webkit-transform: translate(0, 20%);
+            transform: translate(0, 20%);
+  }
+  #main #board #board-members .board-member:hover {
+    -webkit-transform: translate(0, -20%);
+            transform: translate(0, -20%);
+  }
+  #main #board #board-members .board-member:hover .portrait .toggled {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  #main #board #board-members .board-member {
+    height: 180em;
+    font-size: .8vw;
+  }
+  #main #board #board-members .board-member .portrait {
+    top: 8em;
+  }
+  #main #board #board-members .board-member .portrait .toggled {
+    display: block;
+  }
+  #main #board #board-members .board-member .portrait .idle {
+    display: none;
+  }
+}
+
+#main #board #board-members .board-member .name {
   font-size: 16em;
 }
 
-#main #board #board-members .position {
+#main #board #board-members .board-member .position {
   font-size: 8em;
+  margin-top: .2em;
+}
+
+#main #board #board-members .board-member .portrait {
+  position: relative;
+  padding: 20em;
+}
+
+#main #board #board-members .board-member .portrait .idle, #main #board #board-members .board-member .portrait .toggled, #main #board #board-members .board-member .portrait .bg-diamond {
+  position: absolute;
+  left: 0;
+  top: -2em;
+  width: 100%;
+  z-index: -1;
+  -webkit-transform: scale(130%);
+          transform: scale(130%);
+}
+
+#main #board #board-members .board-member .portrait .bg-diamond {
+  opacity: .5;
+  top: 18em;
 }

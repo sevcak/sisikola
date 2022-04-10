@@ -5,7 +5,7 @@
     
     & > *{
         border-bottom: 6px solid $color-main;
-        padding: 10vh 8vw;
+        padding: 8vh 8vw;
     }
 
     #banner{
@@ -80,31 +80,101 @@
         border: none;
         text-align: center;
 
+        
+
         .title{
             text-transform: uppercase;
             font-size: .55vw;
 
             .heading{
                 font-size: 16em;
-
+                margin-bottom: .1em;
             }
 
             .description{
                 font-size: 8em;
+                margin-top: .3em;
+                @media(max-width: 600px){
+                    font-size: 10em;
+                }
             }
         }
 
         #board-members{
-            padding-top: 10vh;
             display: flex;
             justify-content: space-between;
             font-size: .3vw;
-
-            .name{
-                font-size: 16em;
+            padding-top: 10vw;
+            
+            @media(max-width: 600px){
+                flex-direction: column;
+                gap: 12vh;
             }
-            .position{
-                font-size: 8em;
+            
+            .board-member{
+                @media(min-width: 601px){
+                    transition: .3s;
+
+                    .portrait{
+                        .toggled{
+                            display: none;
+                        }    
+                    }
+                    
+                    &:nth-child(odd){
+                        transform: translate(0, 20%);
+                    }
+
+                    &:hover{
+                        transform: translate(0, -20%);
+                        .portrait{
+                            .toggled{
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                
+                @media(max-width: 600px){
+                    height: 180em;
+                    font-size: .8vw;
+                    .portrait{
+                        top: 8em;
+                        .toggled{
+                            display: block;
+                        }   
+                        .idle{
+                            display: none;
+                        }
+                    }
+                }
+
+                .name{
+                    font-size: 16em;
+                }
+                .position{
+                    font-size: 8em;
+                    margin-top: .2em;
+                }
+
+                .portrait{
+                    position: relative;
+                    padding: 20em;
+
+                    .idle, .toggled, .bg-diamond{
+                        position: absolute;
+                        left: 0;
+                        top: -2em;
+                        width: 100%;
+                        z-index: -1;
+                        transform: scale(130%);
+                    }
+
+                    .bg-diamond{
+                        opacity: .5;
+                        top: 18em;
+                    }
+                }
             }
         }
     }
