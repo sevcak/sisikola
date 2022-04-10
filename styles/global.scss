@@ -26,11 +26,29 @@
     box-sizing: border-box;
 }
 
+#main{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 90vh;
+    padding-top: 12vh;
+    overflow: hidden;
+}
+
 h1{
     font-size: 6rem;
     font-weight: normal;
     @media(max-width: 620px){
         font-size: 5rem;
+    }
+}
+
+h2{
+    font-size: 5rem;
+    font-weight: normal;
+    @media(max-width: 620px){
+        font-size: 4.5rem;
     }
 }
 
@@ -48,14 +66,12 @@ body{
     background: $color-secondary;
     background-image: url(../media/noise-bg.png);
     background-position: center;
-    
     background-repeat: repeat;
     background-size: cover;
     color: $color-main;
     font-family: 'Geo', sans-serif;
     width: 100vw;
     overflow-x: hidden;
-    height: 100%;
 }
 
 header, footer{
@@ -63,7 +79,7 @@ header, footer{
     color: $color-secondary;
     width: 100vw;
     height: 12vh;
-    z-index: 10; 
+    z-index: 99; 
 }
 
 header{
@@ -180,10 +196,4 @@ footer{
         top: 9vh;
     }
     
-}
-
-#main{
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
 }

@@ -40,6 +40,21 @@
           box-sizing: border-box;
 }
 
+#main {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  min-height: 90vh;
+  padding-top: 12vh;
+  overflow: hidden;
+}
+
 h1 {
   font-size: 6rem;
   font-weight: normal;
@@ -48,6 +63,17 @@ h1 {
 @media (max-width: 620px) {
   h1 {
     font-size: 5rem;
+  }
+}
+
+h2 {
+  font-size: 5rem;
+  font-weight: normal;
+}
+
+@media (max-width: 620px) {
+  h2 {
+    font-size: 4.5rem;
   }
 }
 
@@ -71,7 +97,6 @@ body {
   font-family: 'Geo', sans-serif;
   width: 100vw;
   overflow-x: hidden;
-  height: 100%;
 }
 
 header, footer {
@@ -79,7 +104,7 @@ header, footer {
   color: #241803;
   width: 100vw;
   height: 12vh;
-  z-index: 10;
+  z-index: 99;
 }
 
 header {
@@ -236,15 +261,4 @@ footer .copyright {
   #nav-bar.active {
     top: 9vh;
   }
-}
-
-#main {
-  width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }

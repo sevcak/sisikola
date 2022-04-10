@@ -1,9 +1,12 @@
 @import "./defs.scss";
 
 #main{
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+
     #banner{
         position: relative;
-        top: 10vh;
         height: 500px;
         background-image: url(../media/sisikola-banner.png);
         background-repeat: no-repeat;
@@ -36,6 +39,19 @@
     }
 
     #contact-info{
-        height: 100vh;
+        position: relative; 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 5vw;
+        gap: 10vw;
+        @media(max-width: 600px){
+            grid-template-columns: 1fr;
+            gap: 10vh;
+        }
+
+        .contact{
+            display: flex;
+            flex-direction: column;
+        }
     }
 }
