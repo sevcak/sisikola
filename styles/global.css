@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 @media (max-width: 1800px) {
@@ -287,6 +288,23 @@ footer .copyright {
   #nav-bar.active {
     top: 9vh;
   }
+}
+
+.inline-icon {
+  display: inline;
+}
+
+.scroll-prompt {
+  text-decoration: none;
+  color: #F6F2D6;
+}
+
+.scroll-prompt:hover {
+  -webkit-filter: brightness(400%);
+          filter: brightness(400%);
+  -webkit-filter: saturate(200%);
+          filter: saturate(200%);
+  text-shadow: 0 0 1rem rgba(246, 242, 214, 0.8);
 }
 
 .scroll-prompt .inline-icon {

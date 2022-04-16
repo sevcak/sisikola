@@ -18,6 +18,8 @@
     @media (max-width: 900px){
         font-size: 5.5px;
     }
+
+    scroll-behavior: smooth;
  }
 
 *{
@@ -216,7 +218,20 @@ footer{
     
 }
 
+.inline-icon{
+    display: inline;
+}
+
 .scroll-prompt{
+    text-decoration: none;
+    color: $color-main;
+
+    &:hover{
+        filter: brightness(400%);
+        filter: saturate(200%);
+        text-shadow: 0 0 1rem rgba($color: $color-main, $alpha: .8);
+    }
+
     .inline-icon{
         animation-name: bounce;
         animation-iteration-count: infinite;
