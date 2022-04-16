@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 52.916665 52.916668"
+   height="200"
+   width="200">
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lstart"
+       refX="0.0"
+       refY="0.0"
+       orient="auto">
+      <path
+         transform="scale(0.8) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path858" />
+    </marker>
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-244.08332)"
+     id="layer1">
+    <path
+       id="rect856"
+       d="m 26.930802,246.49297 c 8.218903,0 14.835564,6.32165 14.835564,14.1741 v 19.79652 c 0,7.85245 -6.616661,14.17411 -14.835564,14.17411 -8.218902,0 -14.835563,-6.32166 -14.835563,-14.17411 v -19.79652 c 0,-7.85245 6.616661,-14.1741 14.835563,-14.1741 z"
+       style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#F6F2D6;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+    <path
+       id="rect856-5"
+       d="m 26.324699,256.50214 h 0.267269 c 1.466835,0 2.647718,1.51689 2.647718,3.40109 v 5.01287 c 0,1.88421 -1.180883,3.4011 -2.647718,3.4011 h -0.267269 c -1.466836,0 -2.647718,-1.51689 -2.647718,-3.4011 v -5.01287 c 0,-1.8842 1.180882,-3.40109 2.647718,-3.40109 z"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#F6F2D6;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
+  </g>
+</svg>

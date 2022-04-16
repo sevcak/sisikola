@@ -167,6 +167,11 @@ header #nav-bar .nav-link {
   color: #241803;
 }
 
+.inline-icon {
+  height: 1.5em;
+  width: 2em;
+}
+
 footer {
   font-size: 2rem;
   display: -webkit-box;
@@ -281,5 +286,44 @@ footer .copyright {
 @media (max-width: 1200px) {
   #nav-bar.active {
     top: 9vh;
+  }
+}
+
+.scroll-prompt .inline-icon {
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translate(0, 30%);
+            transform: translate(0, 30%);
+  }
+  50% {
+    -webkit-transform: translate(0, -20%);
+            transform: translate(0, -20%);
+  }
+  100% {
+    -webkit-transform: translate(0, 30%);
+            transform: translate(0, 30%);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translate(0, 30%);
+            transform: translate(0, 30%);
+  }
+  50% {
+    -webkit-transform: translate(0, -20%);
+            transform: translate(0, -20%);
+  }
+  100% {
+    -webkit-transform: translate(0, 30%);
+            transform: translate(0, 30%);
   }
 }

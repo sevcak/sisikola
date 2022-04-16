@@ -122,6 +122,11 @@ header{
     }
 }
 
+.inline-icon{
+    height: 1.5em;
+    width: 2em;
+}
+
 footer{
     font-size:2rem;
     display: flex;
@@ -209,4 +214,24 @@ footer{
         top: 9vh;
     }
     
+}
+
+.scroll-prompt{
+    .inline-icon{
+        animation-name: bounce;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
+    }
+}
+
+@keyframes bounce {
+    0%{
+        transform: translate(0, 30%);
+    }
+    50%{
+        transform: translate(0, -20%);
+    }
+    100%{
+        transform: translate(0, 30%);
+    }
 }

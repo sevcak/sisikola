@@ -18,11 +18,15 @@
             flex-direction: column;
             justify-content: space-between;
             gap: 1rem;
+            p{
+                font-size: 1em;
+            }
         }
     }
 
     #intro{
-        min-height: 100vh;
+        min-height: 95vh;
+        justify-content: space-around;
         .content{
             display: flex;
             flex-direction: column;
@@ -30,8 +34,10 @@
         }
         .scroll-prompt{
             position: relative;
-            bottom: 20vh;
             text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: end;
         }
     }
 }
