@@ -38,7 +38,7 @@
 }
 
 h1{
-    font-size: 6rem;
+    font-size: 8rem;
     font-weight: normal;
     @media(max-width: 620px){
         font-size: 5rem;
@@ -73,6 +73,10 @@ body{
     font-family: 'Geo', sans-serif;
     width: 100vw;
     overflow-x: hidden;
+    scrollbar-width: 0;
+    &::-webkit-scrollbar{
+        display: none;
+    }
 }
 
 header, footer{
@@ -92,6 +96,10 @@ header{
     box-shadow: .2rem .2rem 3rem rgba($color: $color-secondary, $alpha: 1);
     padding: 0 10rem;
     box-sizing: border-box;
+
+    @media(max-width: 400px){
+        padding: 0 10vw;
+    }
 
     #header-img{
         width: 30vh;
@@ -191,6 +199,10 @@ footer{
         margin: 0 -10rem;
         font-size: 7rem;
         backdrop-filter: blur(4px);
+
+        @media(max-width: 400px){
+            margin: 0 -10vw;
+        }
     }
 
     #nav-bar.active{

@@ -57,7 +57,7 @@
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 8rem;
   font-weight: normal;
 }
 
@@ -98,6 +98,11 @@ body {
   font-family: 'Geo', sans-serif;
   width: 100vw;
   overflow-x: hidden;
+  scrollbar-width: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 header, footer {
@@ -125,6 +130,12 @@ header {
   padding: 0 10rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@media (max-width: 400px) {
+  header {
+    padding: 0 10vw;
+  }
 }
 
 header #header-img {
@@ -259,6 +270,15 @@ footer .copyright {
     -webkit-backdrop-filter: blur(4px);
             backdrop-filter: blur(4px);
   }
+}
+
+@media (max-width: 1200px) and (max-width: 400px) {
+  #nav-bar {
+    margin: 0 -10vw;
+  }
+}
+
+@media (max-width: 1200px) {
   #nav-bar.active {
     top: 9vh;
   }

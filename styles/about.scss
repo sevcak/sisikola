@@ -1,1 +1,37 @@
 @import "./defs.scss";
+
+#main{
+    #intro, #story{
+        padding: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 3rem;
+        //min-height: 100vh;
+
+        h1{
+            line-height: .8em;
+        }
+
+        .text{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+    }
+
+    #intro{
+        min-height: 100vh;
+        .content{
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+        .scroll-prompt{
+            position: relative;
+            bottom: 20vh;
+            text-align: right;
+        }
+    }
+}
