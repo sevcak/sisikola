@@ -37,6 +37,11 @@
     min-height: 90vh;
     padding-top: 12vh;
     overflow: hidden;
+
+    & > *{
+        border-bottom: 6px solid $color-main;
+        padding: 8vh 8vw;
+    }
 }
 
 h1{

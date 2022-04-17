@@ -57,6 +57,11 @@
   overflow: hidden;
 }
 
+#main > * {
+  border-bottom: 6px solid #F6F2D6;
+  padding: 8vh 8vw;
+}
+
 h1 {
   font-size: 8rem;
   font-weight: normal;
