@@ -3,7 +3,7 @@
 #main{
     #splash{
         position: relative;
-        border-bottom: 1rem solid $color-main;
+        border-bottom: 2rem solid $color-main;
         overflow: hidden;
         
         @media(min-width: 1400px){
@@ -54,7 +54,7 @@
                 .splash-text{
                     display: flex;
                     flex-direction: column;
-                    gap: 4rem;
+                    gap: 6rem;
 
                     .text-container{
                         position: relative;
@@ -65,7 +65,10 @@
                         align-items: flex-start;
                         gap: 10vw;
                         
-                        font-size: 4.2rem;
+                        font-size: 4rem;
+                        @media(min-width: 400px){
+                            font-size: 5rem;
+                        }
                         
                         .text{
                             display: flex;

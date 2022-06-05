@@ -22,6 +22,14 @@
             }
         }
     }
+    
+    #banner{
+        height: 200px;
+
+        @media(max-width: 900px){
+            height: 100px;
+        }
+    }
 
     #intro{
         min-height: 95vh;
@@ -49,7 +57,7 @@
         .chapter{
             display: flex;
             flex-direction: column;
-            gap: 2em;
+            gap: 1em;
 
             .chapter-head{
                 display: grid;

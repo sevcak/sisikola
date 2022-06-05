@@ -35,6 +35,16 @@
   font-size: 1em;
 }
 
+#main #banner {
+  height: 200px;
+}
+
+@media (max-width: 900px) {
+  #main #banner {
+    height: 100px;
+  }
+}
+
 #main #intro {
   min-height: 95vh;
   -ms-flex-pack: distribute;
@@ -89,7 +99,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 2em;
+  gap: 1em;
 }
 
 #main #story .chapter .chapter-head {
