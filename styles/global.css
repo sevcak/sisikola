@@ -50,6 +50,47 @@
   padding: 8vh 8vw;
 }
 
+#main #banner {
+  padding: 0;
+  position: relative;
+  height: 500px;
+  background-image: url(../media/sisikola-banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 900px) {
+  #main #banner {
+    height: 60vw;
+  }
+}
+
+#main #banner #banner-content {
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  height: 100%;
+  width: 100%;
+  padding: 5vw;
+  background: rgba(36, 24, 3, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main #banner #banner-content .heading {
+  font-size: 8rem;
+}
+
+@media (max-width: 600px) {
+  #main #banner #banner-content .heading {
+    font-size: 6rem;
+  }
+}
+
 h1 {
   font-size: 8rem;
   font-weight: normal;

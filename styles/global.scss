@@ -36,6 +36,37 @@
         border-bottom: 6px solid $color-main;
         padding: 8vh 8vw;
     }
+
+    #banner{
+        padding: 0;
+        position: relative;
+        height: 500px;
+        background-image: url(../media/sisikola-banner.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        @media(max-width: 900px){
+            height: 60vw;
+        }
+
+        #banner-content{
+            backdrop-filter: blur(3px);
+            height: 100%;
+            width: 100%;
+            padding: 5vw;
+            background: rgba($color: $color-secondary, $alpha: .3);
+            display: flex;
+            align-items: center;
+            
+            .heading{
+                font-size: 8rem;
+                @media(max-width: 600px){
+                    font-size: 6rem;
+                }
+            }
+        }
+    }
 }
 
 h1{
