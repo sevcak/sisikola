@@ -1,0 +1,73 @@
+#main #banner {
+  height: 300px;
+}
+
+@media (max-width: 900px) {
+  #main #banner {
+    height: 200px;
+  }
+}
+
+#main .drink {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.2em;
+}
+
+#main .drink .info .name {
+  font-size: 2em;
+}
+
+#main .drink .products {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 6em;
+}
+
+@media (min-width: 1200px) {
+  #main .drink .products {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+#main .drink .products .product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: .8em;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#main .drink .products .product:hover {
+  -webkit-transform: scale(110%);
+          transform: scale(110%);
+}
+
+#main .drink .products .product .description .type {
+  font-weight: normal;
+}
+
+#main .drink .products .product .image {
+  width: 100%;
+  background: #F6F2D6;
+  border-radius: 5%;
+  padding: 10%;
+}
