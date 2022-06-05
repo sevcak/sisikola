@@ -1,0 +1,11 @@
+@import "./defs.scss";
+
+#main{
+    #banner{
+        height: 300px;
+
+        @media(max-width: 900px){
+            height: 200px;
+        }
+    }
+}

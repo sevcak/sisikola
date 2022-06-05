@@ -1,1 +1,9 @@
-/* No CSS */
+#main #banner {
+  height: 300px;
+}
+
+@media (max-width: 900px) {
+  #main #banner {
+    height: 200px;
+  }
+}
