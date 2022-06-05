@@ -5,6 +5,10 @@
         position: relative;
         border-bottom: 1rem solid $color-main;
         overflow: hidden;
+        
+        @media(min-width: 1400px){
+            height: 90vh;
+        }
 
         #video{
             width: 100vw;
@@ -146,8 +150,10 @@
     #welcome-text{
         position: relative;
         padding: 8rem;
+        height: 80vh;
 
         display: grid;
+        align-items: center;
         grid-template-columns: 1fr 1fr;
         @media(max-width: 600px){
             grid-template-columns: 1fr;

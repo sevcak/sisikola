@@ -4,6 +4,12 @@
   overflow: hidden;
 }
 
+@media (min-width: 1400px) {
+  #main #splash {
+    height: 90vh;
+  }
+}
+
 #main #splash #video {
   width: 100vw;
 }
@@ -191,8 +197,12 @@
 #main #welcome-text {
   position: relative;
   padding: 8rem;
+  height: 80vh;
   display: -ms-grid;
   display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
 }
