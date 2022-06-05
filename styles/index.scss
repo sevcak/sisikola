@@ -1,5 +1,33 @@
 @import "./defs.scss";
 
+#intro-splash{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../media/noise-bg.png);
+    z-index: 999;
+    padding:  0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media(min-width: 700px){
+        padding: 0 30%;
+    }
+
+    .logo{
+        width: 100%;
+    }
+
+    &.display-none{
+        opacity: 0;
+        z-index: -99;
+        transition: .5s;
+    }
+}
+
 #main{
     #splash{
         position: relative;
