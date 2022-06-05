@@ -121,7 +121,9 @@
 }
 
 #main #story .chapter .chapter-head .img-part {
+  position: relative;
   width: 100%;
+  bottom: 20%;
 }
 
 #main #story .chapter:nth-child(1) {

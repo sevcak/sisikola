@@ -2,13 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
-    font-size: 10px;
-    @media (max-width: 1800px){
-        font-size: 9px;
-    }
-    @media (max-width: 1500px){
-        font-size: 8px;
-    }
+    font-size: 8px;
     @media (max-width: 1300px){
         font-size: 7px;
     }
@@ -38,7 +32,7 @@
     padding-top: 12vh;
     overflow: hidden;
 
-    & > *{
+    & > section{
         border-bottom: 6px solid $color-main;
         padding: 8vh 8vw;
     }
