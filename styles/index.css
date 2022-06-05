@@ -1,7 +1,13 @@
 #main #splash {
   position: relative;
-  border-bottom: 1rem solid #F6F2D6;
+  border-bottom: 2rem solid #F6F2D6;
   overflow: hidden;
+}
+
+@media (min-width: 1400px) {
+  #main #splash {
+    height: 90vh;
+  }
 }
 
 #main #splash #video {
@@ -78,7 +84,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 4rem;
+  gap: 6rem;
 }
 
 #main #splash #video-overlay #overlay-content .splash-text .text-container {
@@ -98,7 +104,13 @@
       -ms-flex-align: start;
           align-items: flex-start;
   gap: 10vw;
-  font-size: 4.2rem;
+  font-size: 4rem;
+}
+
+@media (min-width: 400px) {
+  #main #splash #video-overlay #overlay-content .splash-text .text-container {
+    font-size: 5rem;
+  }
 }
 
 #main #splash #video-overlay #overlay-content .splash-text .text-container .text {
@@ -191,8 +203,12 @@
 #main #welcome-text {
   position: relative;
   padding: 8rem;
+  height: 80vh;
   display: -ms-grid;
   display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
 }

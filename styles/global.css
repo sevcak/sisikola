@@ -1,18 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
-  font-size: 10px;
-}
-
-@media (max-width: 1800px) {
-  :root {
-    font-size: 9px;
-  }
-}
-
-@media (max-width: 1500px) {
-  :root {
-    font-size: 8px;
-  }
+  font-size: 8px;
+  scroll-behavior: smooth;
 }
 
 @media (max-width: 1300px) {
@@ -56,8 +49,54 @@
   overflow: hidden;
 }
 
+#main > section {
+  border-bottom: 6px solid #F6F2D6;
+  padding: 8vh 8vw;
+}
+
+#main #banner {
+  padding: 0;
+  position: relative;
+  height: 500px;
+  background-image: url(../media/sisikola-banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 900px) {
+  #main #banner {
+    height: 60vw;
+  }
+}
+
+#main #banner #banner-content {
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  height: 100%;
+  width: 100%;
+  padding: 5vw;
+  background: rgba(36, 24, 3, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main #banner #banner-content .heading {
+  font-size: 8rem;
+}
+
+@media (max-width: 600px) {
+  #main #banner #banner-content .heading {
+    font-size: 6rem;
+  }
+}
+
 h1 {
-  font-size: 6rem;
+  font-size: 8rem;
   font-weight: normal;
 }
 
@@ -98,6 +137,11 @@ body {
   font-family: 'Geo', sans-serif;
   width: 100vw;
   overflow-x: hidden;
+  scrollbar-width: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 header, footer {
@@ -119,12 +163,18 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 5rem;
+  font-size: 6.4rem;
   -webkit-box-shadow: 0.2rem 0.2rem 3rem #241803;
           box-shadow: 0.2rem 0.2rem 3rem #241803;
   padding: 0 10rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@media (max-width: 400px) {
+  header {
+    padding: 0 10vw;
+  }
 }
 
 header #header-img {
@@ -154,6 +204,11 @@ header #nav-bar {
 header #nav-bar .nav-link {
   text-decoration: none;
   color: #241803;
+}
+
+.inline-icon {
+  height: 1.5em;
+  width: 2em;
 }
 
 footer {
@@ -259,7 +314,72 @@ footer .copyright {
     -webkit-backdrop-filter: blur(4px);
             backdrop-filter: blur(4px);
   }
+}
+
+@media (max-width: 1200px) and (max-width: 400px) {
+  #nav-bar {
+    margin: 0 -10vw;
+  }
+}
+
+@media (max-width: 1200px) {
   #nav-bar.active {
     top: 9vh;
+  }
+}
+
+.inline-icon {
+  display: inline;
+}
+
+.scroll-prompt {
+  text-decoration: none;
+  color: #F6F2D6;
+}
+
+.scroll-prompt:hover {
+  -webkit-filter: brightness(400%);
+          filter: brightness(400%);
+  -webkit-filter: saturate(200%);
+          filter: saturate(200%);
+  text-shadow: 0 0 1rem rgba(246, 242, 214, 0.8);
+}
+
+.scroll-prompt .inline-icon {
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translate(0, 30%);
+            transform: translate(0, 30%);
+  }
+  50% {
+    -webkit-transform: translate(0, -20%);
+            transform: translate(0, -20%);
+  }
+  100% {
+    -webkit-transform: translate(0, 30%);
+            transform: translate(0, 30%);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translate(0, 30%);
+            transform: translate(0, 30%);
+  }
+  50% {
+    -webkit-transform: translate(0, -20%);
+            transform: translate(0, -20%);
+  }
+  100% {
+    -webkit-transform: translate(0, 30%);
+            transform: translate(0, 30%);
   }
 }
