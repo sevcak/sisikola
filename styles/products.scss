@@ -22,13 +22,17 @@
         }
         
         .products{
+            padding: 0 5vw;
             position: relative;
             display: grid;
             grid-auto-flow: row;
-            gap: 6em;
+            gap: 8vw;
 
             @media(min-width: 1200px){
                 grid-template-columns: repeat(3, 1fr);
+            }
+            @media(max-width: 1200px){
+                padding: 0 10vw;
             }
 
             .product{
